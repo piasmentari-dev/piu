@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0758d8">
+  <title>chronically online!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ticker ticker-top"><span>HEY! HEY! HEY! HEY! HEY! HEY! HEY! HEY! HEY! HEY! HEY! HEY! </span></div>
+
+  <main id="app">
+    <section class="screen active home-screen" data-screen="home">
+      <div class="sky"></div><div class="hill"></div>
+      <div class="cloud cloud-one"></div><div class="cloud cloud-two"></div>
+      <div class="starfield" aria-hidden="true"></div>
+      <div class="home-stickers">
+        <span class="sticker exclaim">!!</span><span class="sticker eyes">👀</span>
+        <span class="sticker ball">🏐</span><span class="sticker blocky">🕺</span>
+        <span class="sticker worm">〰️</span><span class="sticker alien">👾</span>
+        <span class="sticker laptop">💻</span><span class="sticker starbig">⭐</span>
+      </div>
+      <div class="tiny-search">
+        <button data-next="browser">google search</button>
+        <button data-next="desktop">i'm feeling lucky</button>
+      </div>
+      <div class="poster-copy">
+        <p class="eyebrow">welcome to the world wide web!!!</p>
+        <h1>i love<br><span>internet</span></h1>
+        <p class="poster-sub">love being chronically online!</p>
+      </div>
+      <div class="home-person" aria-label="cartoon internet enthusiast">
+        <div class="person-head"></div><div class="person-body"></div>
+        <div class="person-arm"></div><div class="person-leg leg-left"></div><div class="person-leg leg-right"></div>
+        <div class="person-laptop">▰</div>
+      </div>
+      <div class="taskbar">
+        <button class="start-button" data-next="desktop">✿ start</button>
+        <span class="task-tab">★ internet explorer</span><span class="task-tab">♫ media player</span>
+        <span class="task-clock" id="clock">3:09 PM</span>
+      </div>
+      <div class="home-bottom">
+        <div class="rating">★★★★★</div><div class="counter">160926</div>
+        <button class="enter-button" data-next="browser">click to enter the internet ➜</button>
+      </div>
+    </section>
+
+    <section class="screen browser-screen" data-screen="browser">
+      <header class="window-title"><span>🌐 internet explorer — the whole wide web</span><button class="window-x" data-next="desktop">×</button></header>
+      <div class="browser-toolbar"><span>←</span><span>→</span><span>↻</span><div class="address">http://www.the-internet.com/</div><span>☆</span></div>
+      <div class="browser-content">
+        <div class="browser-logo">the <b>internet</b><small>the place where everything happens!</small></div>
+        <form id="search-form" class="search-form"><input id="search-input" placeholder="what are we looking for today?" autocomplete="off"><button>search!</button></form>
+        <div class="search-hints"><span>♡ popular searches</span><button type="button" data-search="cute websites">cute websites</button><button type="button" data-search="pixel games">pixel games</button><button type="button" data-search="funny cats">funny cats</button></div>
+        <div id="search-results" class="search-results"><h3>✦ today's internet treasures</h3><div class="result-card">★ <b>the coolest corner</b><p>a tiny place full of sparkles, pixels and fun.</p></div><div class="result-card">★ <b>unnecessary but delightful</b><p>you definitely did not need this. click anyway.</p></div></div>
+        <button class="big-next" data-next="desktop">okay, take me to the desktop! ➜</button>
+      </div>
+    </section>
+
+    <section class="screen desktop-screen" data-screen="desktop">
+      <div class="desktop-wallpaper">
+        <div class="desktop-topline">my computer <span>connected to the internet ●</span></div>
+        <h2>hello, little internet person!</h2><p class="desktop-note">double click your curiosity (or just click it)</p>
+        <div class="desktop-icons">
+          <button class="desk-icon" data-window="about"><span>📁</span>my files</button>
+          <button class="desk-icon" data-window="mail"><span>💌</span>mail box</button>
+          <button class="desk-icon" data-window="music"><span>🎵</span>music</button>
+          <button class="desk-icon" data-next="arcade"><span>🎮</span>games</button>
+          <button class="desk-icon" data-window="trash"><span>🗑️</span>trash</button>
+          <button class="desk-icon" data-next="guestbook"><span>📒</span>guestbook</button>
+        </div>
+        <div class="desktop-window" id="desktop-window">
+          <div class="window-title"><span id="window-heading">📁 my files</span><button class="window-x" id="close-window">×</button></div>
+          <div class="window-inside" id="window-inside">choose an icon on the desktop to open a little surprise ♡</div>
+        </div>
+        <div class="desktop-dock"><span>⊞ start</span><span>🌐 browser</span><span>📂 my stuff</span><span id="dock-time">3:09 PM</span></div>
+      </div>
+      <button class="big-next desktop-next" data-next="arcade">let's play something! ➜</button>
+    </section>
+
+    <section class="screen arcade-screen" data-screen="arcade">
+      <header class="arcade-header"><span>★ internet arcade ★</span><span>insert imagination to play</span></header>
+      <h2>choose your tiny game!</h2>
+      <div class="game-grid">
+        <article class="game-card"><div class="game-art catcher-art">✦<br>✿<br>★</div><h3>star catcher</h3><p>catch as many falling stars as you can.</p><button data-game="catcher">play game ➜</button></article>
+        <article class="game-card"><div class="game-art memory-art">♡ ♡<br>☆ ☆</div><h3>memory match</h3><p>find the matching pairs. use your brain!</p><button data-game="memory">play game ➜</button></article>
+        <article class="game-card"><div class="game-art click-art">CLICK!</div><h3>click-o-mania</h3><p>how many clicks can you collect?</p><button data-game="clicker">play game ➜</button></article>
+      </div>
+      <div class="game-console" id="game-console"><div class="console-title">game screen</div><div id="game-area">pick a game above to start playing ✧</div></div>
+      <button class="big-next" data-next="guestbook">i'm done playing! next ➜</button>
+    </section>
+
+    <section class="screen guestbook-screen" data-screen="guestbook">
+      <div class="guestbook-paper">
+        <div class="guestbook-title">♡ the internet guestbook ♡</div>
+        <p>you were here! leave a tiny trace of your visit.</p>
+        <form id="guest-form"><input id="guest-name" maxlength="22" placeholder="your nickname" required><textarea id="guest-message" maxlength="120" placeholder="write something nice..." required></textarea><button>sign the guestbook!</button></form>
+        <div class="guest-list" id="guest-list"><div class="guest-entry"><b>web fairy</b><span>this website is sparkly!!! ☆</span></div><div class="guest-entry"><b>pixel pal</b><span>i was here before it was cool.</span></div></div>
+      </div>
+      <button class="big-next" data-next="final">one last stop ➜</button>
+    </section>
+
+    <section class="screen final-screen" data-screen="final">
+      <div class="final-stars">✦　★　✧　✿　✦　☆　✧</div>
+      <div class="final-window">
+        <div class="window-title"><span>♡ connection status</span><span>● ● ●</span></div>
+        <div class="final-inner"><div class="final-smiley">☺</div><h2>you are now<br><span>forever online!</span></h2><p>thanks for visiting my little corner of the internet.</p><div class="progress"><i></i></div><b>100% internet happiness</b><div class="final-actions"><button id="restart">↶ start all over</button><button data-next="home">back to home</button></div></div>
+      </div>
+      <p class="final-footer">made with pixels, chaos & a suspicious amount of screen time ♡</p>
+    </section>
+  </main>
+
+  <div class="ticker ticker-bottom"><span>HEY! HEY! HEY! HEY! HEY! HEY! HEY! HEY! HEY! HEY! HEY! HEY! </span></div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
